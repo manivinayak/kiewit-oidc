@@ -23,7 +23,7 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Create Resource Group
-        run: az group create --name my-rg --location eastus
+        run: az group create --name kip_rg  --location eastus
 
       - name: List Resources
         run: az resource list
