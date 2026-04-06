@@ -25,5 +25,5 @@ jobs:
       - name: Create Resource Group
         run: az group create --name kip_rg  --location eastus
 
-      - name: List Resources
-        run: az resource list
+      - name: List Resources Group
+        run: az group list --output table
